@@ -8,7 +8,7 @@ export default function PaymentScreen() {
   const [paymentSheetEnabled, setPaymentSheetEnabled] = useState(false);
 
   const fetchPaymentIntentClientSecret = async () => {
-    const response = await fetch('http://192.168.1.9:3000/create-payment-intent', {
+    const response = await fetch('http://192.168.29.161:3000/create-payment-intent', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

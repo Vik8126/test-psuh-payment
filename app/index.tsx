@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import registerForPushNotificationsAsync from './notifactionService';
 import { StripeProvider } from '@stripe/stripe-react-native';
 import PaymentScreen from './PaymentScreen';
+import ApiTestScreen from './ApiTestScreen';
 
 export default function Index() {
   useEffect(() => {
@@ -21,5 +22,8 @@ export default function Index() {
     >
       <PaymentScreen />
     </StripeProvider>
+    // <View>
+    // <ApiTestScreen/>
+    // </View>
   );
 }
